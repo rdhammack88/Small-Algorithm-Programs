@@ -22,5 +22,4 @@ function wordCounter() {
 
 window.onload = function() {
     document.getElementById('search').addEventListener('click', wordCounter);
-
 }

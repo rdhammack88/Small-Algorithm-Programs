@@ -9,7 +9,7 @@ window.onload = function() {
             for(var i = 0; i < 9; i++) {
                if(!input.includes(i) || input[0] == 0){
                     output.innerHTML = "The sequence " + input + " is not a Pandigital Sequence";
-                    return false
+                    return false;
                 } else {
                     continue;
                 }
@@ -17,7 +17,7 @@ window.onload = function() {
             
             output.innerHTML = "The sequence " + input + " is a Pandigital Sequence";
         } else {
-            output.innerHTML = "Please enter a number sequence."
+            output.innerHTML = "Please enter a number sequence.";
         }
     });
 };
