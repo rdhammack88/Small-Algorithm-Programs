@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Counter</title>
+    <style>
+        body {
+            font-size: 1.2em;
+        }
+        input {
+            font-size: 1.3em;
+            line-height: .8em;
+            padding: 5px;
+            width: 30%;
+        }
+        textarea {
+            font-size: 1em;
+        }
+        button {
+            font-size: 1em;
+            background: #fc3;
+        }
+        #stringSearch, #word, #count {
+            color: #fc3;
+            background: #000;
+            text-align: center;
+            padding: 5px;
+        }
+        #searchedContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <label>
+        Word to search for: <br>
+        <input type="text" id="match" placeholder="sample">
+    </label>
+    <br><br>
+    <label for="stringMatch">String to match:</label>
+    <br>
+    <textarea name="stringMatch" id="stringMatch" rows="7" cols="30" placeholder="This sample text, holds the word 'sample' twice"></textarea>
+    <br>
+    <button type="submit" id="search">Search Phrase</button>
+    <br><br><br>
+
+    <div id="searchedContent">
+        <p id="searchedWord">The word &nbsp;<span id="word"></span>&nbsp; appears &nbsp;<span id="count"></span>&nbsp; times in the following message: </p>
+        <p id="stringSearch"></p>
+    </div>
+    <script src="playground.js"></script>
+</body>
+</html>
