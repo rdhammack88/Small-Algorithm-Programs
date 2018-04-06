@@ -12,7 +12,7 @@ function solution(A) {
         return error;
     }
     
-    if(Math.max.apply(null, A) === -1) {
+    if(Math.max.apply(null, A) <= 0) {
         return 1;
     }
     
